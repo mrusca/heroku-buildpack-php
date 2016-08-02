@@ -1,3 +1,12 @@
+# Changes in this fork
+
+Inclusion of the following PHP extensions for PHP 5.6.24
+
+* yaml
+* phalcon 1.3.4
+* igbinary
+* libevent
+
 # Heroku buildpack: PHP
 
 ![php](https://cloud.githubusercontent.com/assets/51578/8882982/73ea501a-3219-11e5-8f87-311e6b8a86fc.jpg)

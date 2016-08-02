@@ -16,12 +16,18 @@ dep_url=http://pyyaml.org/download/libyaml/${dep_archive_name}
 
 echo "-----> Building libyaml ${dep_version}..."
 
+echo "A ${dep_url}"
 curl -L ${dep_url} | tar xz
 
+echo "B ${dep_dirname}"
 pushd ${dep_dirname}
+echo "B"
 ./configure --prefix=${OUT_PREFIX}
+echo "C"
 make -s -j 9
+echo "D"
 make install -s
+echo "E"
 popd
 
 echo "-----> Done."
