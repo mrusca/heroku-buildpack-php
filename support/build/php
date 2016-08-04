@@ -82,8 +82,6 @@ export PATH=${OUT_PREFIX}/bin:$PATH
     --with-mysqli \
     --with-openssl \
         --with-kerberos \
-    --with-pgsql \
-    --with-pdo-pgsql \
     --with-readline \
     --enable-sockets \
     --enable-zip \
@@ -108,10 +106,9 @@ export PATH=${OUT_PREFIX}/bin:$PATH
     --enable-pcntl=shared \
     --enable-shmop=shared \
     --enable-soap=shared \
-    --with-sqlite3=shared \
-    --with-pdo-sqlite=shared \
     --with-xmlrpc=shared \
     --with-xsl=shared \
+    --with-pdo-dblib=${OUT_PREFIX} \
     $configureopts
 make -s -j 9
 make install -s
